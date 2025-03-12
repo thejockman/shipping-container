@@ -1,0 +1,66 @@
+/* Hero Section Styling (Your Existing Code) */
+.hero p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    color: black;
+}
+
+.hero h1,
+.hero p {
+    color: black !important;
+}
+
+.hero {
+    position: relative;
+    background: url('container-header.jpg') no-repeat center center fixed; /* Fixes the path */
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    overflow: hidden;
+    transition: background 1s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.hero .btn {
+    animation: fadeInUp 2.5s ease-in-out;
+}
+
+/* Background Scroll Effect */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ✅ Section Fade-in Effect */
+section {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ✅ Animate sections when they appear in viewport */
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
